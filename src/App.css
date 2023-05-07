@@ -1,0 +1,17 @@
+body {
+  margin: 0 !important;
+  background-color: #F9FAFF;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-container{
+  display: grid;
+  width: 100%;
+  grid-template-areas: "a b";
+  grid-template-columns: 2fr 10fr;
+}

@@ -1,0 +1,26 @@
+
+.active {
+    font-weight: 500;
+    background: rgba(67, 88, 117, 0.08);
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.linkWrapper {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.linkText {
+    color: #435875;
+}

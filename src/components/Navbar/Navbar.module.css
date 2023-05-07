@@ -1,0 +1,19 @@
+.nav {
+    grid-area: a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 18px;
+    gap:4px;
+    background: rgba(67, 88, 117, 0.05);
+    color: #435875;
+    font-weight: 400;
+}
+
+.category{
+    margin-bottom: 4px;
+    margin-left: 12px;
+    margin-top: 22px;
+    color: #8E9EB5;
+}
