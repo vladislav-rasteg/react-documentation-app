@@ -5,13 +5,16 @@ import NavbarLink from "./NavLink/NavbarLink";
 const Navbar = () => {
     return <nav className={s.nav}>
         <div className={s.category}>БАЗОВЫЕ ЭЛЕМЕНТЫ</div>
-        <NavbarLink name='Profile' link='/profile'/>
-        <NavbarLink name='Messages' link='/dialogs'/>
-        <NavbarLink name='News' link='/news'/>
-        <div className={s.category}>ПРОДВИНУТЫЕ ЭЛЕМЕНТЫ</div>
-        <NavbarLink name='Profile' link='/profile2'/>
-        <NavbarLink name='Messages' link='/dialogs2'/>
-        <NavbarLink name='News' link='/news2'/>
+        <NavbarLink name='Введение' link='/intro'/>
+        <NavbarLink name='Подключение счетчика' link='/counter'/>
+        <NavbarLink name='Уведомления в Telegram' link='/telegram'/>
+        <NavbarLink name='Уведомления в WhatsApp' link='/whatsapp'/>
+        <NavbarLink name='Интеграции' link='/integrations'/>
+        <div className={s.category}>БОЛБШЕ ИНФОРМАЦИИ</div>
+        <NavbarLink name='Changelog' link='/changelog'/>
+        <NavbarLink name='TargetAds API Status' link='/api_status'/>
+        <NavbarLink name='TargetAds University' link='/university'/>
+        <NavbarLink name='TargetAds Community' link='/community'/>
     </nav>
 }
 

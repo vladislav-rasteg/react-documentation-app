@@ -1,17 +1,101 @@
 .header {
-    border: 2px solid #EFF0F9;
+    border-bottom: 1px solid rgba(67, 88, 117, 0.12);
     display: flex;
-    position: sticky;
     align-items: center;
     background-color: #F9FAFF;
     width: 100vw;
-    height: 90px;
+    height: 80px;
     padding-left: 40px;
+    box-sizing: border-box;
 }
 
-.logoText {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 12px;
-    color: #2D79B2;
+.custom_input_search{
+    position: relative;
+    margin-left: calc(100vw/2 - 228px - 40px - 225px);
+}
+
+.custom_input_search input{
+    font-family: Inter;
+    font-size: 14px;
+    background: rgba(67, 88, 117, 0.05);
+    border: 1px solid rgba(67, 88, 117, 0.12);
+    border-radius: 8px;
+    color: #899fb7;
+    height: 42px;
+    width: 450px;
+    padding: 12px 48px;
+    color: #435875;
+}
+
+.custom_input_search input:focus{
+
+    outline: none; 
+    border: none;
+    border: 1px solid #007BFF;
+}
+
+.custom_input_search svg{
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.searchResultsList{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid rgba(67, 88, 117, 0.12);
+    border-radius: 8px;
+    padding: 4px;
+    background: #F9FAFF;
+    z-index: 999;
+    width: 100%;
+}
+
+.searchResultsList a{
+    text-decoration: none;
+}
+
+.searchResult{
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.searchResult:hover {
+    background: rgba(67, 88, 117, 0.05);
+}
+
+.searchResultsList h2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    color: #435875;
+    margin: 0 0 2px 0;
+}
+
+.searchResultsList h3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #899fb7;
+    margin: 0;
+}
+
+.invisible{
+    display: none;
+}
+
+.divider{
+    height: 1px;
+    margin: 0 12px;
+    background: rgba(67, 88, 117, 0.12);
+}
+
+.divider:last-child{
+    display: none;
 }

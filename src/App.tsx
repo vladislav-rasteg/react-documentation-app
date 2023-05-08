@@ -1,10 +1,10 @@
 import React, {createElement as e} from 'react';
 import './App.css';
-import Intro from './components/content/Intro/Intro';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Intro from './components/content/Intro/Intro';
+import Counter from './components/content/Counter/Counter';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -14,7 +14,9 @@ const App = () => {
           <div className='app-container'>
           <Navbar />
         <Routes>
-          <Route path='/' element={<Intro />} />
+          <Route path='/counter' element={<Counter />} />
+          <Route path='/intro' element={<Intro />} />
+          <Route path='/' element={<Navigate to="/intro" />}/>
         </Routes>
         </div>
       </BrowserRouter>

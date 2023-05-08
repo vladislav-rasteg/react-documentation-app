@@ -1,10 +1,10 @@
 
 .active {
     font-weight: 500;
-    background: rgba(67, 88, 117, 0.08);
-    width: 100%;
+    background: rgba(67, 88, 117, 0.05);
+    width: 248px;
     padding-left: 12px;
-    padding-right: 12px;
+    padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 6px;
@@ -12,15 +12,20 @@
 }
 
 .linkWrapper {
-    width: 100%;
+    width: 248px;
     padding-left: 12px;
-    padding-right: 12px;
+    padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
-    margin-right: 40px;
+    border-radius: 6px;
+}
+
+.linkWrapper:hover{
+    background: rgba(67, 88, 117, 0.05);
 }
 
 .linkText {
+    font-size: 14px;
     color: #435875;
 }

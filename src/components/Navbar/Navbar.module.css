@@ -1,19 +1,25 @@
 .nav {
     grid-area: a;
-    height: 100vh;
+    box-sizing: border-box;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 40px;
     padding-top: 18px;
     gap:4px;
-    background: rgba(67, 88, 117, 0.05);
+    /* background: rgba(67, 88, 117, 0.05); */
+    border-right: 1px solid rgba(67, 88, 117, 0.12);
     color: #435875;
     font-weight: 400;
+    width: 328px;
 }
 
 .category{
+    font-size: 14px;
     margin-bottom: 4px;
     margin-left: 12px;
-    margin-top: 22px;
+    margin-top: 12px;
+    display: inline-block;
     color: #8E9EB5;
+    width: 236px;
 }
