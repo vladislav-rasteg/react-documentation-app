@@ -26,6 +26,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    animation: done;
 }
 
 .codeBlock button:hover {
@@ -37,4 +38,14 @@ code{
     font-size: 14px;
     color: #435875;
     line-height: 18px;
+}
+
+.icon_copy{
+    position: absolute;
+    opacity: 1;
+    height: 24px;
+    width: 24px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
 }
