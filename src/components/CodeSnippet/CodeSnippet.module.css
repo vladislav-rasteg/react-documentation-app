@@ -17,7 +17,7 @@
     height: 100%;
 }
 
-.codeBlock button{
+.codeBlock_copy{
     width: 40px;
     height: 40px;
     background: rgba(67, 88, 117, 0.08);
@@ -26,10 +26,9 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    animation: done;
 }
 
-.codeBlock button:hover {
+.codeBlock_copy:hover {
     background: rgba(67, 88, 117, 0.20);
 }
 
@@ -48,4 +47,50 @@ code{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
+}
+
+.icon_copied{
+    position: absolute;
+    opacity: 0;
+    height: 22px;
+    width: 22px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    animation: animationIn 300ms ease-out 100ms;
+    animation-fill-mode: forwards;
+}
+
+.button_copied{
+    width: 40px;
+    height: 40px;
+    background: rgba(45, 206, 138, 1);
+    border: 0;
+    border-radius: 0px 0px 0px 6px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: buttonColor 400ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes animationIn{
+    0% {
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(.33);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+      }
+}
+
+@keyframes buttonColor{
+    0% {
+        background: rgba(45, 206, 138, 0.08);
+    }
+    100% {
+        background: #DAF3ED;
+    }
 }

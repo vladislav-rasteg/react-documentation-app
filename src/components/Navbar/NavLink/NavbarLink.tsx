@@ -1,9 +1,15 @@
 import s from './NavbarLink.module.css';
 import { NavLink } from "react-router-dom";
 
-const NavbarLink = (props: any) => {
+interface NavbarLinkProps {
+    link: string;
+    name: string;
+  }
+
+
+const NavbarLink = ({ link, name }: NavbarLinkProps) => {
     return (
-        <NavLink to={props.link} className = { navData => navData.isActive ? s.active : s.linkWrapper }> <div className={s.linkText}> {props.name} </div></NavLink>
+        <NavLink to={link} className = { navData => navData.isActive ? s.active : s.linkWrapper }> <div className={s.linkText}> {name} </div></NavLink>
     )
 
 }

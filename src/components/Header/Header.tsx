@@ -5,13 +5,6 @@ import { ReactComponent as Logo } from './assets/logo.svg';
 import { ReactComponent as SearchIcon } from './assets/icon_search.svg';
 import { useState } from 'react';
 
-// function search(event: any){
-//     const results = fuse.search(event.currentTarget.value);
-//     const searchResults = results.map(result => result.item)
-//     console.log(searchResults)
-// }
-
-
 const Header = () => {
 
     const fuse = new Fuse(pages, {

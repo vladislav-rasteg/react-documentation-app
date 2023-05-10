@@ -6,6 +6,7 @@
     min-width: calc(100vw - 340px);
     position: relative;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .doc_content{
