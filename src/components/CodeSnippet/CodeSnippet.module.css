@@ -91,6 +91,6 @@ code{
         background: rgba(45, 206, 138, 0.08);
     }
     100% {
-        background: #DAF3ED;
+        background: rgba(88, 224, 167, 1)
     }
 }
